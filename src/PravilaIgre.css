@@ -1,0 +1,9 @@
+.slika {
+    display: flex;
+    justify-content: center;
+}
+
+.sadrzaj {
+    font-size: 18px;
+    color: gray;
+}

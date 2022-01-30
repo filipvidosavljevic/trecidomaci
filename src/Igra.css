@@ -1,0 +1,35 @@
+.kontejner {
+    display: flex;
+}
+
+.igra {
+    width: 50%;
+}
+
+.rezultati {
+    width: 50%;
+}
+
+
+.selektovan {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.protivnickiPoeni {
+    color: red;
+}
+
+.mojiPoeni {
+    color: blue;
+}
+
+
+.izabraniZnakovi {
+    display: flex;
+}
+
+.izabraniZnak {
+    padding: 5px;
+    border: 1px solid gray;
+}
