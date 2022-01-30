@@ -8,7 +8,6 @@ function Igra() {
   }
 
   const izracunajPobednika = (prvi, drugi) => {
-    console.log(prvi, drugi);
     if (prvi == drugi) {
       setRezultatText("Nereseno");
       return;
