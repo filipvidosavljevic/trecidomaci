@@ -7,7 +7,7 @@ function PravilaIgre() {
     <div>
       <div className="naslov"></div>
       <div className="slika">
-          <img width={300} src={slika}/>
+        <img alt='Kamen papir makaze' width={300} src={slika} />
       </div>
       <div className="sadrzaj">
         Papir, kamen, makaze je igra u kojoj učestvuju dva ili više igrača koristeći jednu ruku. Igrači istovremeno

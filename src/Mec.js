@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import kamen from "./kamen.jpg";
-import papir from "./papir.jpg";
 import makaze from "./makaze.jpg";
+import papir from "./papir.jpg";
 
 const niz = [
   { src: kamen, name: "kamen" },
@@ -25,7 +25,7 @@ function Mec({
           {niz.map((znak) => {
             return (
               <div onClick={() => setMojIzbor(znak.name)}>
-                <img className={mojIzbor == znak.name && "selektovan"} width={150} src={znak.src} />
+                <img className={mojIzbor === znak.name && "selektovan"} alt={znak.name} width={150} src={znak.src} />
               </div>
             );
           })}
@@ -55,11 +55,11 @@ function Mec({
         <div className="izabraniZnakovi">
           <div className="izabraniZnak">
             Moj izbor: {mojIzbor}
-            <img width={150} src={niz.find((item) => item.name == mojIzbor)?.src} />
+            <img alt={mojIzbor} width={150} src={niz.find((item) => item.name === mojIzbor)?.src} />
           </div>
           <div className="izabraniZnak">
             Protivnikov izbor: {niz[izborProtivnika]?.name}
-            <img width={150} src={niz[izborProtivnika]?.src} />
+            <img alt={niz[izborProtivnika]?.name} width={150} src={niz[izborProtivnika]?.src} />
           </div>
         </div>
       </div>
